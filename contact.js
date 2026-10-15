@@ -1,0 +1,2 @@
+
+document.getElementById('contactForm').addEventListener('submit',function(e){e.preventDefault();const d=new FormData(this);const subject='Hotel Savoy website enquiry: '+d.get('subject');const body='Name: '+d.get('name')+'\nEmail: '+d.get('email')+'\nSubject: '+d.get('subject')+'\n\nMessage:\n'+d.get('message');window.location.href='mailto:MohammadMakbul918@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);});
